@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,200;0,400;1,100;1,200&family=Playfair+Display:ital,wght@0,500;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&family=Ubuntu&family=Viga&display=swap");
+
+html{
+    scroll-behavior: smooth;
+    top: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    background-color: ghostwhite;
+}
+
+.landing-page {
+    background-image: url(komp.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.welcome-text {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0;
+    top: 45%;
+    transform: scale(0.8);
+    font-size: 50px;
+}
+
+.nav {
+    list-style: none;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    margin: 0;
+}
+
+.logo a{
+    color: white;
+    float: left;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 4em;
+    padding-left: 4rem;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: right;
+    padding-right: 4rem;
+    top: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    /* display: flex; */
+    padding: .6em;
+}
+
+.nav li a:hover {
+    color: teal;
+    transition: 0.5s;
+}
+
+section {
+    padding-top: 4rem;
+}
+
+.introduction {
+    text-align: center;
+}
+
+.img-icon {
+    max-width: 13em;
+}
+
+.content-perkenalan {
+    display: inline-block;
+    text-align: justify;
+    max-width: 30em;
+    margin: 1em auto;
+    padding: 5px;
+}
+
+.title-portfolio {
+    text-align: center;
+}
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.img-projek {
+    max-width: 300px;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.from-contact-us, .contact-info {
+    width: 100%;
+    text-align: center;
+}
+
+.title-contact-us {
+    text-align: center;
+}
+
+.inputan {
+    width: 60%;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+}
+
+.inputan label {
+    display: block;
+    font-size: 1.2em;
+}
+
+.inputan input,
+.inputan textarea {
+    width: 100%;
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+.btn-kirim {
+   background-color: teal;
+   color: white;
+   border: none;
+   padding: .5em;
+   width:60%;
+   margin: 0 auto;
+   display: block;
+   font-size: 1em;
+}
+
+.btn-kirim:hover{
+    background-color: green;
+    transition: .5s ease;
+}
+
+.non-desktop{
+    position: relative;
+    color: grey;
+}
+
+.contact-info div{
+    display: inline-block;
+}
+
+.icon-info:hover{
+    color: teal;
+    transition: 1s ;
+    /* opacity: .5; */
+}
+
+.icon-info{
+    font-size: 50px;
+    color: grey;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+}
+
+@media screen and(min-width:600px){
+   #contact-us{
+       vertical-align: top;
+   }
+   .from-contact-us, .contact-info{
+       width: 499.5%;
+       display: inline-block;
+       vertical-align: top;
+   }
+   .non-desktop{
+       display: none;
+   }
+   .contact-info div{
+       display: block;
+   }
+   .bx{
+       display: inline-block;
+       min-width: 300px;
+       color: grey;
+   }
+}
